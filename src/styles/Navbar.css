@@ -1,0 +1,18 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+#navbar{
+    display: flex;
+    justify-content: end;
+    border: 2px solid white;
+}
+li{
+    list-style-type: none;
+    padding: 1em;
+}
+a{
+    text-decoration: none;
+    color: #16FF00;
+}

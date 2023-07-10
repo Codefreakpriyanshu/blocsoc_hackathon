@@ -1,1 +1,0 @@
-# BlocSoc_Hackathon
