@@ -1,9 +1,13 @@
-import './styles/App.css';
 
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 function App() {
   return (
-    <button >Connect Wallet</button>
+         <div>
+            <ConnectWallet
+              
+            />
+          </div>
   );
 }
 
