@@ -52,3 +52,4 @@ app.get("/", (req,res)=>{
         console.log(err)
     }
 })
+export {track_data};
