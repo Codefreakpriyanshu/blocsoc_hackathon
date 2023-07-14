@@ -33,10 +33,6 @@ const router = createBrowserRouter([
     path: "/verify-ownership",
     element: <VerifyOwner/>
   },
-  // {
-  //   path: "/UploadYourMusic",
-  //   element: <UploadPage/>,
-  // },
 ]);
 
 
