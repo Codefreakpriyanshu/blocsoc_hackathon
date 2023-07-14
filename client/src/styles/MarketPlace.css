@@ -1,0 +1,25 @@
+.btn{
+    background: #4776E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 25px;
+    padding: 0px 30px;
+    border-radius: 999em;
+    border:none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+        vertical-align: bottom;
+      /* white-space: nowrap; */
+    font-family: lato;
+    letter-spacing: 2px;
+    transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+    font-weight: 600;
+  }
+  .btn:hover{
+    opacity:0.7;
+    transition:0.2s;
+  }
+  
