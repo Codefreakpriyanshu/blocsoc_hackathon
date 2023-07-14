@@ -2,7 +2,6 @@ const express = require(`express`)
 const app = express()
 const mongoose = require(`mongoose`)
 const mongodb = require(`mongodb`)
-const Track_data = require('./formDetails')
 //conectin to database
 const DB = `mongodb+srv://mihir1101:mihir1101@cluster0.w0iczi8.mongodb.net/logindata?retryWrites=true&w=majority`
 mongoose.connect(DB, {
@@ -35,21 +34,18 @@ app.post("/UploadYourMusic", async (req, res) => {
         res.render('upload')
 
     } catch (error) {
-        res.send({Staus:"error"})
+        res.send({status:"error"})
     }
 })
 
 app.listen(3000, () => {
 })
-
-let track_data = Track_data.find({},function(err,tracks){
-    if(err) console.warn(err);
-    return tracks;
-})
-export {track_data};
-song_list_container=document.querySelector('.song-list')
-window.onload() = function Song_list(){
-    for(let i = 0;i<track_data.length;i++){
-        song_list_container.innerHTML = `<img class ="track-art" src = '${track_data[i].track_artURL}'> <span class="track-name"> ${track_data[i].songName} </span> <span class="artist-name"> ${track_data[i].artistName} </span> <img class="download-icon" src = "../../public/download-icon.png"> <button class="btn">play</button> `;
-    }
+app.get('/',async (req,res) => {
+     try{
+         let track_data = await Music.find({});
+         res.send({status:"ok",data:track_data});
+     }catch(err){
+         res.send({status:"error"})
+     }
+    
 }
