@@ -34,18 +34,21 @@ app.post("/UploadYourMusic", async (req, res) => {
         res.render('upload')
 
     } catch (error) {
-        res.send({status:"error"})
+        res.send({Staus:"error"})
     }
 })
 
 app.listen(3000, () => {
 })
-app.get('/',async (req,res) => {
-     try{
-         let track_data = await Music.find({});
-         res.send({status:"ok",data:track_data});
-     }catch(err){
-         res.send({status:"error"})
-     }
-    
-}
+
+app.get("/", (req,res)=>{
+    try{
+        Music.find({},function(err,tracks){
+            res.render('Music_marketplace',{
+                track_data:tracks
+            })
+        })
+    }catch(err){
+        console.log(err)
+    }
+})
