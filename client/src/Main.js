@@ -8,7 +8,7 @@ function Main(){
         <div>
             <Navbar/>
             <div>Marketplace</div>
-            <UploadButton></UploadButton>
+            <UploadButton/>
         </div>
     )
 }

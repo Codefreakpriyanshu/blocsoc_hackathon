@@ -1,10 +1,18 @@
 #Upload{
-    background-color: #16FF00;
-    position: absolute;
+    background-color: blue;
+    position: fixed;
     bottom: 2em;
     right: 2em;
+    border: none;
+    border-radius: 40px;
+    border: none;
 }
 #UploadText{
-    color: black;
-    font-size: 1.5em;
+    color: white;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+#Upload:hover{
+    background-color: rgb(255, 0, 0);
+    border: 2px solid blue;
 }

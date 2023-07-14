@@ -1,0 +1,19 @@
+#BackgroundVideo{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.connect-btn{
+    position: absolute !important;
+    z-index: 1 !important;
+    bottom: 15% !important;
+    left: 42% !important;
+    background-color: blue !important;
+    color: white !important;
+    border: 0 !important;
+    font-size: 1.2em !important;
+    padding: 0.7em !important;
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+    border-radius: 18px !important;
+}

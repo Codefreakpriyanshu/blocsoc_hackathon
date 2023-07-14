@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+</head>
+<body>
+    <div id="UploadPageTitle">
+        <h2>Upload Your Music</h2>
+    </div>
+    <div>
+        <form id="form1" method="POST" action="/UploadYourMusic">
+            <label>Artist Name:</label>
+        <input placeholder="Artist Name" name="artistName"></input>
+            <label>Music Name:</label>
+            <input name="musicName"></input>
+            <label>Music Link:</label>
+        <input type="text" placeholder="Drive Link" name="musicUrl"/>
+        <button type="submit" form="form1" value="Submit" onClick={uploadImage}>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
